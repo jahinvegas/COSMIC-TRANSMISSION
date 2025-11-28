@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>DOC 911 – Cosmic Transmission</title>
-  <style>
-    body {
-      background: #000;
-      color: #00ffff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 120px;
-      margin: 0;
-    }
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.9);
-      border-bottom: 2px solid #00ffff;
-      padding: 15px 0;
-      z-index: 1000;
-    }
-    header h1 {
-      color: #ff0080;
-      margin: 0;
-      letter-spacing: 4px;
-    }
-    .logo {
-      margin-top: 60px;
-      width: 150px;
-      height: 150px;
-      filter: url(#warp) drop-shadow(0 0 20px #0ff);
-      transition: transform 1s, filter 1s;
-      cursor: pointer;
-    }
-    .logo:hover {
-      transform: rotate(720deg) scale(1.5);
-      filter: url(#warpStrong) drop-shadow(0 0 45px #ff0);
-    }
-    .video-container {
-      margin: 40px auto;
-      max-width: 480px;
-      border: 2px solid #00ffff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 30px rgba(0,255,255,0.3);
-    }
-    .video-container iframe {
-      width: 100%;
-      height: 270px; /* 16:9 format, adjust as needed */
-      display: block;
-    }
-    footer {
-      margin-top: 60px;
-      padding: 30px 0;
-      background: rgba(0,0,0,0.9);
-      border-top: 2px solid #00ffff;
-      color: #ccc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>DOC 911 – Cosmic Playlist Transmission</title>
+    <style>
+        body {
+            background: #000;
+            color: #00ffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding-top: 140px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.9);
+            border-bottom: 2px solid #00ffff;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: #ff0080;
+            margin: 0;
+            letter-spacing: 4px;
+        }
+
+        .logo {
+            margin-top: 60px;
+            width: 150px;
+            height: 150px;
+            filter: url(#warp) drop-shadow(0 0 20px #0ff);
+            transition: transform 1s, filter 1s;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            transform: rotate(720deg) scale(1.5);
+            filter: url(#warpStrong) drop-shadow(0 0 45px #ff0);
+        }
+
+        .playlist-container {
+            margin: 40px auto;
+            max-width: 560px;
+            border: 2px solid #00ffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+        }
+
+        .playlist-container iframe {
+            width: 100%;
+            height: 315px;
+            /* standard 16:9 — adjust if needed */
+            display: block;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 30px 0;
+            background: rgba(0, 0, 0, 0.85);
+            border-top: 2px solid #00ffff;
+            color: #ccc;
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>DOC 911 — COSMIC TRANSMISSION</h1>
-  </header>
+    <header>
+        <h1>DOC 911 – Cosmic Transmission Playlist</h1>
+    </header>
 
-  <!-- Spinning Blackhole Logo -->
-  <img class="logo"
-       src="https://cdn.abacus.ai/images/3b3fc8a7-4195-4b70-868f-5f3ae0b78b76.png"
-       alt="Blackhole Logo">
+    <!-- Spinning Blackhole Logo -->
+    <img class="logo" src="https://cdn.abacus.ai/images/3b3fc8a7-4195-4b70-868f-5f3ae0b78b76.png" alt="Blackhole Logo">
 
-  <!-- Embedded YouTube Video -->
-  <div class="video-container">
-    <iframe
-      src="https://www.youtube.com/embed/RZV77WBwtY0?autoplay=1&mute=1&loop=1&playlist=RZV77WBwtY0"
-      title="DOC 911 Cosmic Video"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
+    <!-- Embedded Playlist -->
+    <div class="playlist-container">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLrYD4SJlktuI4XZ2a1LmW3NIhYM28BfEA&autoplay=1&mute=1&loop=1" title="DOC 911 Playlist Transmission" frameborder="0" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
 
-  <!-- Warp filters for the logo animation -->
-  <svg style="position:absolute; width:0; height:0;">
-    <filter id="warp">
-      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.025" numOctaves="2" seed="2" result="warp"/>
-      <feDisplacementMap in="SourceGraphic" in2="warp" scale="20" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-    <filter id="warpStrong">
-      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.04" numOctaves="3" seed="8" result="warpStrong"/>
-      <feDisplacementMap in="SourceGraphic" in2="warpStrong" scale="40" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-  </svg>
+    <!-- Warp Filters for Logo Animation -->
+    <svg style="position:absolute; width:0; height:0;">
+        <filter id="warp">
+            <feTurbulence type="fractalNoise" baseFrequency="0.015 0.025" numOctaves="2" seed="2" result="warp" />
+            <feDisplacementMap in="SourceGraphic" in2="warp" scale="20" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+        <filter id="warpStrong">
+            <feTurbulence type="fractalNoise" baseFrequency="0.02 0.04" numOctaves="3" seed="8" result="warpStrong" />
+            <feDisplacementMap in="SourceGraphic" in2="warpStrong" scale="40" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
 
-  <footer>
-    &copy; 2025 DOC 911 • All Rights Reserved
-  </footer>
+    <footer>
+        &copy; 2025 DOC 911 • Blackhole Attraction • All Rights Reserved
+    </footer>
 
 </body>
+
 </html>
