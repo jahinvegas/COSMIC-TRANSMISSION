@@ -73,7 +73,8 @@
 <body>
 
     <header>
-        <h1>DOC 911 – Cosmic Transmission Playlist</h1>
+        <h1><a href="https://cooltext.com"><img src="https://images.cooltext.com/5746341.png" width="1183" height="49" alt="DOC 911 • Cosmic Transmission Playlist" /></a>
+        </h1>
     </header>
 
     <!-- Spinning Blackhole Logo -->
@@ -98,8 +99,8 @@
     </svg>
 
     <footer>
-        &copy; 2025 DOC 911 • Blackhole Attraction • All Rights Reserved
-    </footer>
+        <img src="https://images.cooltext.com/5746340.png" width="721" height="29" alt="© 2025 DOC 911 • Blackhole Attraction • All Rights Reserved " />
+        < </footer>
 
 </body>
 
