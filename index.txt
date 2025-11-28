@@ -73,6 +73,9 @@
 <body>
 
     <header>
+        <img src="https://images.cooltext.com/5746343.png" width="640" height="82" alt="JAHINVEGAS" />
+        
+        
         <h1><a href="https://cooltext.com"><img src="https://images.cooltext.com/5746341.png" width="1183" height="49" alt="DOC 911 • Cosmic Transmission Playlist" /></a>
         </h1>
     </header>
